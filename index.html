@@ -1,0 +1,78 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TitanTrade Pro</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Roboto+Mono:wght@400;500&display=swap');
+      
+      :root {
+        --bg-main: #0f172a;
+        --bg-surface: #1e293b;
+        --bg-surface-alt: #1e293b80;
+        --border-color: #334155;
+        --text-primary: #f8fafc;
+        --text-secondary: #94a3b8;
+        --text-muted: #64748b;
+        --mono-bg: #0f172a;
+      }
+
+      .light {
+        --bg-main: #f1f5f9;
+        --bg-surface: #ffffff;
+        --bg-surface-alt: #ffffff;
+        --border-color: #e2e8f0;
+        --text-primary: #0f172a;
+        --text-secondary: #475569;
+        --text-muted: #94a3b8;
+        --mono-bg: #f8fafc;
+      }
+
+      body {
+        font-family: 'Inter', sans-serif;
+        background-color: var(--bg-main);
+        color: var(--text-primary);
+        overflow-x: hidden;
+        transition: background-color 0.3s ease, color 0.3s ease;
+      }
+      .mono {
+        font-family: 'Roboto Mono', monospace;
+      }
+      ::-webkit-scrollbar {
+        width: 4px;
+        height: 4px;
+      }
+      ::-webkit-scrollbar-track {
+        background: var(--bg-surface);
+      }
+      ::-webkit-scrollbar-thumb {
+        background: var(--text-muted);
+        border-radius: 2px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: var(--text-secondary);
+      }
+      
+      /* Theme Transition Utility */
+      .theme-transition {
+        transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "react": "https://esm.sh/react@^19.2.3",
+    "recharts": "https://esm.sh/recharts@^3.6.0",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/"
+  }
+}
+</script>
+</head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
